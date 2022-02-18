@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Graph</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+        font-family: "Fira Sans Condensed", sans-serif;
+      }
+
+      #navbar {
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        background-color: #000099;
+      }
+
+      #sergas-logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      #sergas-title {
+        font-size: 50px;
+        color: white;
+      }
+
+      .chartCard {
+        margin-left: 100px;
+        width: 90vw;
+        height: calc(80vh - 40px);
+        background: rgba(255, 26, 104, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+
+      .chartBox {
+        width: 900px;
+        padding: 20px;
+        border-radius: 20px;
+        border: solid white;
+        background: white;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        #sergas-logo {
+          width: 30px;
+          height: 30px;
+        }
+        #sergas-title {
+          font-size: 35px;
+        }
+
+        .chartCard {
+          width: 60vw;
+        }
+
+        .chartBox {
+          width: 700px;
+        }
+      }
+
+      @media only screen and (max-width: 700px) {
+        .chartCard {
+          width: 55vw;
+        }
+        .chartBox {
+          width: 500px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .chartCard {
+          width: 50vw;
+        }
+        .chartBox {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <p id="sergas-title">
+          <img
+            id="sergas-logo"
+            src="../images/sergas-logo.png"
+            alt="sergas-logo"
+          />
+          SERGAS
+        </p>
+      </nav>
+    </header>
+
+    <div class="chartCard">
+      <div class="chartBox">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
+    <script>
+      // setup
+      const data = {
+        labels: [
+          "Contagio activo",
+          "Contacto estrecho",
+          "Expirado",
+          "No contagio",
+        ],
+        datasets: [
+          {
+            label: "Estadísticas de contagios",
+            data: [55, 49, 44, 24],
+            backgroundColor: [
+              "rgba(255, 26, 104, 0.2)",
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(255, 206, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(255, 159, 64, 0.2)",
+              "rgba(0, 0, 0, 0.2)",
+            ],
+            borderColor: [
+              "rgba(255, 26, 104, 1)",
+              "rgba(54, 162, 235, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(75, 192, 192, 1)",
+              "rgba(153, 102, 255, 1)",
+              "rgba(255, 159, 64, 1)",
+              "rgba(0, 0, 0, 1)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      // config
+      const config = {
+        type: "bar",
+        data,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      };
+
+      // render init block
+      const myChart = new Chart(document.getElementById("myChart"), config);
+    </script>
+  </body>
+</html>

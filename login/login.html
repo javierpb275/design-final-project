@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <p id="sergas-title">
+          <img
+            id="sergas-logo"
+            src="../images/sergas-logo.png"
+            alt="sergas-logo"
+          />
+          SERGAS
+        </p>
+      </nav>
+    </header>
+    <div id="login-form-container">
+      <form id="form-login">
+        <p id="inicio-sesion-title">INICIO DE SESIÓN</p>
+        <label for="email" class="label-login login-element"
+          >CORREO ELECTRÓNICO:</label
+        ><br />
+        <input
+          type="text"
+          placeholder=""
+          name="email"
+          required
+          class="input-login login-element"
+        /><br />
+        <label for="password" class="label-login login-element"
+          >CONTRASEÑA:</label
+        ><br />
+        <input
+          type="password"
+          placeholder=""
+          name="password"
+          required
+          class="input-login login-element"
+        /><br />
+        <div id="button-container">
+          <a href="../select-register-search/select-register-search.html">
+            <button type="button" id="button-login" class="login-element">
+              Iniciar Sesión
+            </button>
+          </a>
+        </div>
+      </form>
+    </div>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  background-color: black;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  background-color: #000099;
+}
+
+#sergas-logo {
+  width: 50px;
+  height: 50px;
+}
+
+#sergas-title {
+  font-size: 50px;
+  color: white;
+}
+
+#login-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+#form-login {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: #000099;
+  padding: 30px;
+}
+
+.login-element {
+  margin-bottom: 12px;
+}
+
+#inicio-sesion-title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.label-login {
+  font-size: 20px;
+}
+
+.input-login {
+  width: 350px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#button-login {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 150px;
+  color: white;
+  background-color: #000099;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  #sergas-logo {
+    width: 30px;
+    height: 30px;
+  }
+  #sergas-title {
+    font-size: 35px;
+  }
+  #login-form-container {
+    margin-top: 100px;
+  }
+  #form-login {
+    padding: 20px;
+  }
+  .login-element {
+    margin-bottom: 8px;
+  }
+  #inicio-sesion-title {
+    font-size: 20px;
+  }
+  .label-login {
+    font-size: 15px;
+  }
+  .input-login {
+    width: 190px;
+  }
+  #button-login {
+    font-size: 15px;
+    width: 120px;
+  }
+}

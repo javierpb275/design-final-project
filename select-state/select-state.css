@@ -1,0 +1,75 @@
+html,
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  background-color: #000099;
+}
+
+#sergas-logo {
+  width: 50px;
+  height: 50px;
+}
+
+#sergas-title {
+  font-size: 50px;
+  color: white;
+}
+
+#select-state-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+#form-select-state {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+.buttons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 280px;
+  color: white;
+  background-color: #000099;
+  border: 1px solid #000099;
+  margin-bottom: 50px;
+  padding: 20px 0 20px 0;
+}
+
+@media only screen and (max-width: 390px) {
+  #sergas-logo {
+    width: 30px;
+    height: 30px;
+  }
+  #sergas-title {
+    font-size: 35px;
+  }
+  #select-state-form-container {
+    margin-top: 60px;
+  }
+  .buttons {
+    font-size: 18px;
+    width: 180px;
+    padding: 10px 0 10px 0;
+  }
+}

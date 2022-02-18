@@ -1,0 +1,118 @@
+html,
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  background-color: #000099;
+}
+
+#sergas-logo {
+  width: 50px;
+  height: 50px;
+}
+
+#sergas-title {
+  font-size: 50px;
+  color: white;
+}
+
+#edit-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#form-edit {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+}
+
+.label-input-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.edit-element {
+  margin-bottom: 50px;
+}
+
+#edit-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.label-edit {
+  font-size: 27px;
+  margin-right: 5px;
+}
+
+.input-edit {
+  width: 400px;
+  height: 25px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#button-edit {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 150px;
+  color: white;
+  background-color: #000099;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #edit-form-container {
+    margin-top: 20px;
+  }
+  #sergas-logo {
+    width: 30px;
+    height: 30px;
+  }
+  #sergas-title {
+    font-size: 35px;
+  }
+  .label-input-container {
+    flex-direction: column;
+  }
+  #form-edit {
+    padding: 25px;
+  }
+  .edit-element {
+    margin-bottom: 20px;
+  }
+  #edit-title {
+    font-size: 25px;
+  }
+  .label-edit {
+    font-size: 20px;
+  }
+  .input-edit {
+    width: 220px;
+  }
+}

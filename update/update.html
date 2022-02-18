@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>update</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./update.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <p id="sergas-title">
+          <img
+            id="sergas-logo"
+            src="../images/sergas-logo.png"
+            alt="sergas-logo"
+          />
+          SERGAS
+        </p>
+      </nav>
+    </header>
+    <div id="edit-form-container">
+      <form id="form-edit">
+        <p id="edit-title">Modificar datos de usuario</p>
+        <div class="label-input-container">
+          <label for="email" class="label-edit edit-element">Email</label>
+          <input
+            type="text"
+            placeholder=""
+            name="email"
+            required
+            class="input-edit edit-element"
+          />
+        </div>
+        <div class="label-input-container">
+          <label for="phone" class="label-edit edit-element">Teléfono</label>
+          <input
+            type="text"
+            placeholder=""
+            name="phone"
+            required
+            class="input-edit edit-element"
+          />
+        </div>
+        <div class="label-input-container">
+          <label for="estado" class="label-edit edit-element">Estado</label>
+          <select id="estado" class="input-edit edit-element">
+            <option value="contacto-activo" selected>Contacto Activo</option>
+            <option value="contacto-estrecho">Contacto Estrecho</option>
+            <option value="contagio-expirado">Contagio Expirado</option>
+            <option value="no-contagio">No Contagio</option>
+          </select>
+        </div>
+        <div id="button-container">
+          <a href="../list/list.html">
+            <button type="button" id="button-edit" class="edit-element">
+              Editar
+            </button>
+          </a>
+        </div>
+      </form>
+    </div>
+    <footer></footer>
+  </body>
+</html>
